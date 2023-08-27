@@ -1,0 +1,65 @@
+import './style.css';
+import './canvas.ts'
+// import { myImage } from './image';
+
+// myImage.addEventListener('load', () => {
+//   const canvas = document.getElementById('canvas1') as HTMLCanvasElement;
+//   const ctx = canvas.getContext('2d') as CanvasRenderingContext2D;
+
+//   canvas.width = 500;
+//   canvas.height = 706;
+
+//   ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height);
+
+//   let particlesArray: Array<Particle> = [];
+
+//   const numberOfParticles = 5000;
+
+//   class Particle {
+//     x: number;
+//     y: number;
+//     speed: number;
+//     velocity: number;
+//     size: number;
+//     constructor() {
+//       this.x = Math.random() * canvas.width;
+//       this.y = 0;
+//       this.speed = 0;
+//       this.velocity = Math.random() * 3.5;
+//       this.size = Math.random() * 1.5 + 1;
+//     }
+
+//     update() {
+//       this.y += this.velocity;
+//       if (this.y >= canvas.height) {
+//         this.y = 0;
+//         this.x = Math.random() * canvas.width;
+//       }
+//     }
+//     draw() {
+//       ctx.beginPath();
+//       ctx.arc(this.x, this.y, this.size, 0, Math.PI);
+//       ctx.fill();
+//     }
+//   }
+
+//   function init() {
+//     for (let i = 0; i < numberOfParticles; i++) {
+//       particlesArray.push(new Particle());
+//     }
+//   }
+//   init();
+
+//   function animate() {
+//     ctx.globalAlpha = 0.02;
+//     // ctx.fill = 'black'
+//     ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+//     for (let i = 0; i < particlesArray.length; i++) {
+//       particlesArray[i].update();
+//       particlesArray[i].draw();
+//     }
+//     requestAnimationFrame(animate);
+//   }
+//   animate();
+// });
