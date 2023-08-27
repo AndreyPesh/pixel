@@ -1,5 +1,5 @@
 import './style.css';
-import './canvas.ts'
+// import './canvas.ts'
 // import { myImage } from './image';
 
 // myImage.addEventListener('load', () => {
@@ -63,3 +63,5 @@ import './canvas.ts'
 //   }
 //   animate();
 // });
+
+import './picture';
