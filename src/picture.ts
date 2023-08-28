@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
   canvas.height = window.innerHeight;
   const dx = window.innerHeight < 500 ? 0 : -40;
   const dy = window.innerHeight < 706 ? 0 : 240;
-  console.log(window.innerHeight);
+  // console.log(window.innerHeight);
   
 
   ctx.drawImage(icon, dx, dy);
