@@ -76,8 +76,3 @@ function animate() {
 }
 
 animate();
-
-
-const test = () => {
-  
-}
