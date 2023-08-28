@@ -38,7 +38,7 @@ window.addEventListener('load', () => {
   let count = 0;
   const animate = () => {
     // ctx.drawImage(icon, 0, 0, canvas.width, canvas.height);
-    ctx.globalAlpha = count < 500 ? 0.5 : 0.05;
+    ctx.globalAlpha = count < 300 ? 0.5 : 0.05;
     // console.log(count);
 
     ctx.fillStyle = 'rgb(0,0,0)';
