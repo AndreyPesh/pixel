@@ -32,7 +32,7 @@ let count = 0;
 const animate = () => {
   // ctx.drawImage(icon, 0, 0, canvas.width, canvas.height);
   ctx.globalAlpha = count < 1000 ? 0.5 : 0.05;
-  console.log(count);
+  // console.log(count);
   
 
   ctx.fillStyle = 'rgb(0,0,0)';
@@ -41,7 +41,8 @@ const animate = () => {
 
   for (let i = 0; i < particlesArray.length; i++) {
     particlesArray[i].update();
-    const alpha = particlesArray[i].speed * 0.3 ? particlesArray[i].speed * 0.3 : 0.05
+    const alpha = particlesArray[i].speed * 0.3 ? particlesArray[i].speed * 0.5 : 0.05
+    // const alpha = particlesArray[i].speed * 0.5 
     ctx.globalAlpha = alpha;
     particlesArray[i].draw();
   }

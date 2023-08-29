@@ -20,8 +20,8 @@ class Particle {
     this.x = Math.random() * canvas.width;
     this.y = 0;
     this.speed = 0;
-    this.size = Math.random() * 0.8 + 1;
-    this.velocity = Math.random() * 0.1;
+    this.size = Math.random() * 0.1 + 1;
+    this.velocity = Math.random() * 0.001;
     this.position1 = Math.floor(this.y);
     this.position2 = Math.floor(this.x);
   }
@@ -33,6 +33,7 @@ class Particle {
     this.speed = this.mappedImage[this.position1][this.position2][0];
 
     let movement = 1.3 - this.speed + this.velocity;
+    // let speed = movement < 0.5 ? 0.2 : movement
 
     this.y += movement;
     if (this.y >= this.canvas.height) {
